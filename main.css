@@ -7,9 +7,9 @@ body {
 }
 
 .wrapper {
-  padding: 4rem;
+  padding: .75rem;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0 auto;
   width: 90%;
   text-align: center;
@@ -19,5 +19,48 @@ body {
 .author {
   font-family: 'Crimson Text', serif;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: .75rem;
+}
+
+.dropdown-button {
+  padding: .5rem;
+  background-color:firebrick;
+  color: antiquewhite;
+  border-radius: 5px;
+  border: none;
+}
+
+
+
+.language {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropdown-content {
+  position: absolute;
+  background-color: hsla(10,80%,90%,.5);
+  display: none;
+  
+}
+
+ a {
+  text-decoration: none;
+  color: lightcoral;
+   line-height: 1.5;
+   display: block;
+   padding: .3rem;
+   min-width: 4rem;
+   
+}
+
+.language:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: beige;
+  transition: background-color .15s ease-in-out;
 }
